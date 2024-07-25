@@ -9,98 +9,204 @@
   </head>
 
   <body>
-    <header id="top">
+    <header id="page-header">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" width="500" alt="Profile image of cat wearing a bow tie."/>
     </header>
+
     <main>
 
       <section class="card" id="html-section">
-        <h2>HTML</h2>
 
-        <ul>
-          <li>Each HTML page is made of elements.</li><br>
+        <header class="card-head" id="html-intro">
+          <h2>HTML</h2><br>
 
-          <li>
-            An element comprises a pair of tags, and content between the tags<br>
+          <p>HTML defines the structure of a web page</p><br>
+
+          <p>HTML is made of "elements"</p><br>
+
+          <figure>
+            <figcaption>
+              An element comprises a pair of tags, and content between the tags
+            </figcaption><br>
             <img src="assets\element-example.png" alt="element example">
-          </li><br>
+          </figure><br>
+
+          <figure>
+            <figcaption>
+              An element can also have attributes inside the opening tag
+            </figcaption><br>
+            <img src="assets/element-attribute.png" alt="element attribute example">
+          </figure><br>   
+        </header>
+
+        <article class="card-article" id="main-elements">
+          <h3>
+            Main elements: these are present in every HTML page, and are the most basic/most important
+          </h3>
+
+          <ul>              
+            <li>The &lt;html&gt; element is the root element: the stating point for every HTML page</li><br>
+
+            <li>The &lt;head&gt; element contains information about the web page that the user doesn't see</li><br>
+
+            <li>The &lt;body&gt; element contains all content that the user will see on the page</li><br>
+          </ul>
+        </article>
+
+        <article class="card-article" id="content-elements">
+          <h3>
+            Content elements: These appear in the body, and show all the content visible to the user
+          </h3>
           
-          <li>
-            An element can also have attributes inside the opening tag
-            <br><img src="assets/element-attribute.png" alt="element attribute example"><br>
-          </li><br>
+          <ul>
+            <li>
+              The &lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;, and &lt;h6&gt; tags stand for "header 1" 
+              through "header 6." Header 1 is biggest, and 6 is smallest
+            </li><br>
 
-          <li>The tag defines which kind of element. There are many different tags</li><br>
+            <li>The &lt;p&gt; tag stands for "paragraph", and represents some text</li><br>
 
-          <li><h3>Different kinds of elements:</h3>
+            <li>The &lt;img&gt; tag stands for "image," Which displays a picture on the page</li><br>
 
-            <h3>Main elements: these are present in every HTML page, and are the most basic/most important</h3>
+            <li>The &lt;ul&gt; tag stands for "unordered list," which is a bulleted list</li><br>
 
-            <ul>              
-              <li>The &lt;html&gt; element is the root element: the stating point for every HTML page.</li><br>
+            <li>The &lt;ol&gt; tag stands for "ordered list," which is a numbered list</li><br>
 
-              <li>The &lt;head&gt; element contains information about the web page that the user doesn't see</li><br>
+            <li>The &lt;li&gt; tag stands for "list item," and is one entry in the list</li><br>
+          </ul>
+        </article>
 
-              <li>The &lt;body&gt; element contains all content that the user will see on the page</li><br>
-            </ul>
+        <article class="card-article" id="semantic-elements">
+          <h3>
+            Semantic elements: these aren't content per say, but are dividers which hold other elements
+            They are important for defining structure of the page, making it more readable
+          </h3>
 
-            <h3>Content elements: These appear in the body, and show all the content visible to the user</h3>
-            
-            <ul>
-              <li>
-                The &lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;, and &lt;h6&gt; tags stand for "header 1" 
-                through "header 6." Header 1 is biggest, and 6 is smallest.
-              </li><br>
+          <ul>
+            <li>&lt;article&gt;</li><br>
+            <li>&lt;aside&gt;</li><br>
+            <li>&lt;details&gt;</li><br>
+            <li>&lt;figcaption&gt;</li><br>
+            <li>&lt;figure&gt;</li><br>
+            <li>&lt;footer&gt;</li><br>
+            <li>&lt;header&gt;</li><br>
+            <li>&lt;main&gt;</li><br>
+            <li>&lt;mark&gt;</li><br>
+            <li>&lt;nav&gt;</li><br>
+            <li>&lt;section&gt;</li><br>
+            <li>&lt;summary&gt;</li><br>
+            <li>&lt;time&gt;</li><br>
+          </ul><br>
+        </article>
 
-              <li>The &lt;p&gt; tag stands for "paragraph", and represents some text</li><br>
-
-              <li>The &lt;img&gt; tag stands for "image," Which displays a picture on the page</li><br>
-
-              <li>The &lt;ul&gt; tag stands for "unordered list," which is a bulleted list.</li><br>
-
-              <li>The &lt;ol&gt; tag stands for "ordered list," which is a numbered list.</li><br>
-
-              <li>The &lt;li&gt; tag stands for "list item," and is one entry in the list</li><br>
-            </ul>
-
-            <h3>Semantic elements: these don't present content, but show the structure of the page</h3>
-
-            <ul>
-              <li>&lt;section&gt;</li>
-            </ul>
-          </li><br>
-
-        </ul>
       </section>
 
       <section class="card" id="css-section">
-        <h2>CSS</h2>
 
-        <ul>
-          <li>NOTES NOTES NOTES</li><br>
-        </ul>
+        <header class="card-head" id="css-intro">
+          <h2>CSS</h2><br>
 
+          <p>CSS is a way to orgainze the attributes of HTML elements</p><br>
+
+          <p>CSS is made up of "rule sets"</p><br>
+
+          <figure>
+            <figcaption>
+              A rule set contains a selector, and a declaration
+            </figcaption><br>
+            <img src="assets\rule-set.png" alt="CSS-rule-set">
+          </figure><br>
+
+          <p>
+            The selector defines which elements are being targeted by the 
+            declaration
+          </p><br>
+
+          <p>
+            The declaration gives the attribues which will apply to the 
+            selected elements
+          </p><br>
+
+          <p>
+            Together, the selector and declaration apply the attribues
+            which define how a web page looks
+          </p>
+
+        </header>
+
+        <article class="card-article" id="selectors">
+          <h3>Selectors: how to target the right elements</h3>
+          <ul>
+            <li><figure>
+              <figcaption>You can select elements by their tag</figcaption>
+              <img src="assets\tag-selector.PNG" alt="select-tag">
+            </figure></li>
+
+            <li><figure>
+              <figcaption>You can select all tags within a container</figcaption>
+              <img src="assets\container-selector.PNG" alt="select-container">
+            </figure></li>
+
+            <li><figure>
+              <figcaption>Use a comma to make multiple selections</figcaption>
+              <img src="assets\multiple-selector.PNG" alt="select-multiple">
+            </figure></li><br>
+
+            <li><figure>
+              <figcaption>Use a period to select all elements of the same class</figcaption>
+              <img src="assets\class-selector.PNG" alt="select-class">
+            </figure></li><br>
+
+            <li><figure>
+              <figcaption>Use a hashtag to select an element by its ID</figcaption>
+              <img src="assets\id-selector.PNG" alt="select-id">
+            </figure></li><br>
+          </ul>
+        </article>
+
+        <article class="card-article" id="declarations">
+          <h3>Declarations: attribues you can apply to the elements</h3>
+
+          <ul>
+            <li></li><br>
+            <li></li><br>
+            <li></li><br>
+            <li></li><br>
+            <li></li><br>
+          </ul>
+        </article>
       </section>
 
       <section class="card" id="git-section">
-        <h2>Git</h2>
 
-        <ul>
-          <li>NOTES NOTES NOTES</li><br>
-        </ul>
+        <header class="card-head">
+          <h2>Git</h2>
+        </header>
+
+        <article class="card-article">
+          <ul>
+            <li>NOTES NOTES NOTES</li><br>
+          </ul>
+        </article>
       </section>
 
       <section class="card" id="javascript-section">
-        <h2>JavaScript</h2>
 
-        <ul>
-          <li>NOTES NOTES NOTES</li><br>
-        </ul>
+        <header class="card-head" id="javascript-intro">
+          <h2>Javascript</h2>
+        </header>
+
+        <article class="card-article">
+          <ul>
+            <li>Notes Notes Notes</li>
+          </ul>
+        </article>
       </section>
+
     </main>
 
-    <footer>
+    <footer id="page-footer">
       <p>I can code!</p>
     </footer>
   </body>
