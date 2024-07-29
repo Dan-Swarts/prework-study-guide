@@ -24,7 +24,7 @@
 
           <p>HTML defines the structure of a web page</p><br>
 
-          <p>HTML is made of "elements"</p><br>
+          <p>HTML is made out of "elements"</p><br>
 
           <figure>
             <figcaption>
@@ -75,29 +75,36 @@
             <li>The &lt;ol&gt; tag stands for "ordered list," which is a numbered list</li><br>
 
             <li>The &lt;li&gt; tag stands for "list item," and is one entry in the list</li><br>
+
+            <li>The &lt;a&gt; tag stands for "anchor," wrap this around another element to create a hyperlink</li>
           </ul>
         </article>
 
         <article class="card-article" id="semantic-elements">
-          <h3>
-            Semantic elements: these aren't content per say, but are dividers which hold other elements
+          <h3><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">
+            Semantic elements: these aren't content per say, but are dividers which hold other elements.
             They are important for defining structure of the page, making it more readable
-          </h3>
+          </a></h3>
 
           <ul>
-            <li>&lt;article&gt;</li><br>
-            <li>&lt;aside&gt;</li><br>
-            <li>&lt;details&gt;</li><br>
-            <li>&lt;figcaption&gt;</li><br>
-            <li>&lt;figure&gt;</li><br>
-            <li>&lt;footer&gt;</li><br>
-            <li>&lt;header&gt;</li><br>
-            <li>&lt;main&gt;</li><br>
-            <li>&lt;mark&gt;</li><br>
-            <li>&lt;nav&gt;</li><br>
-            <li>&lt;section&gt;</li><br>
-            <li>&lt;summary&gt;</li><br>
-            <li>&lt;time&gt;</li><br>
+            <li>&lt;section&gt; one section or division of the web page</li><br>
+            <li>&lt;footer&gt; final content</li><br>
+            <li>&lt;header&gt; introductory or navigational content</li><br>
+            <li>&lt;figure&gt; illustrations, diagrams, photos, etc.</li><br>
+            <li>&lt;figcaption&gt; the caption for a figure</li><br>
+            <li>&lt;article&gt; independent, self-contained content</li><br>
+            <li>&lt;aside&gt; something indirectly related to surrounding content</li><br>
+            <li>&lt;details&gt; gives additional details which can be hidden by the user</li><br>
+            <li>&lt;summary&gt; acts as a heading for &lt;details&gt;</li><br>
+            <li>&lt;main&gt; the main content of the document</li><br>
+            <li>&lt;mark&gt; marked/highlighted text</li><br>
+            <li>&lt;nav&gt; gives navigational links</li><br>
+            <li>&lt;time&gt; date/time</li><br>
+
+            <li>
+              &lt;div&gt; and &lt;span&gt; these are non-semantic elements, they don't describe the content 
+              contained. However, it still acts as container for content.
+            </li>
           </ul><br>
         </article>
 
@@ -181,11 +188,129 @@
 
         <header class="card-head">
           <h2>Git</h2>
+
+          <p>
+            Git is a version control system, which allows multiple people to work on a codebase at the
+            same time
+          </p>
+
         </header>
 
         <article class="card-article">
+          <h3>Set up</h3>
+
           <ul>
-            <li>NOTES NOTES NOTES</li><br>
+            <li><a href="https://git-scm.com/downloads">
+              Dowload Git Bash, the shell which allows you to run Git commands
+            </a></li><br>
+
+            <li><a href="https://education.github.com/git-cheat-sheet-education.pdf">
+              Use commands through the Git Bash terminal
+            </a></li><br>
+
+            <li>
+              Using Git Bash, type `git config --global user.name "&lt;name&gt;"` to set the name used for 
+              all git pushes on the current user
+            </li><br>
+
+            <li>
+              type `git config --global user.email "&lt;email&gt;"` to set the email for all git pushes for 
+              this user
+            </li><br>
+
+            <li>
+              These commands are important because it lets Git track who contributes code to the project
+            </li><br>
+
+            <li>
+              use git config `--global color.ui auto` to set automatic command line coloring
+            </li><br>
+
+          </ul>
+        </article>
+
+        <article class="card-article">
+          <h3>GitHub</h3>
+
+          <ul>
+            <li>GitHub is a platform for hosting and sharing projects managed with Git version control</li><br>
+
+            <li>
+              You will need to set up a GitHub account and find the project you're contribuing to, and 
+              get the ssh url
+            </li><br>
+
+            <li>
+              Navigate to the directory where you want to work on the project, and clone the project using 
+              `git cone [url]`
+            </li><br>
+          </ul>
+        </article>
+
+        <article class="card-article">
+          <h3>Features of GitHub</h3>
+          <ul>
+            <li>
+              Git stores every version of the project, including all different changes in previous 
+              versions
+            </li><br>
+
+            <li>
+              GitHub lets you create "issues" which can let you manage your different tasks, and focus
+              your efforts
+            </li><br>
+
+            <li>
+              You can create your own "branch," or an isolated copy of the project where you can address 
+              issues without intrducing bugs to the stable version
+            </li><br>
+
+            <li>
+              recieve changes made to the repo by using `git pull origin &lt;branch name&gt;
+            </li><br>
+
+          </ul>
+        </article>
+
+        <article class="card-article">
+          <h3>Branching</h3>
+
+          <ul>
+            <li>
+              once you're in your workspace, and you've cloned the directory, use the `git branch` and 
+              `git checkout` commands to manage your branching
+            </li><br>
+
+            <li>
+              generate a new branch using `git checkout -b &lt;branch name&gt;`
+            </li><br>
+
+            <li>
+              move in between existing branches using `git checkout &lt;branch name&gt;`
+            </li><br>
+
+            <li>
+              see all existing branches using `git branch`
+            </li><br>
+
+            <li>
+              once your code is completed and tested in your own branch, use `git add -A` to add 
+              changes, `git commit -m  &lt;message&gt; to stage changes with a comment on what's 
+              been changed, and finally `git push origin &lt;branch name&gt; to put the changes 
+              in the cloud
+            </li>
+
+            <li>
+              Finally, have some other developers review your code and then merge the branch 
+              into the stable version
+            </li><br>
+          </ul>
+        </article>
+
+        <article class="card-article">
+          <h3>Merging branches</h3>
+          <ul>
+            <li>Notes on merging</li><br>
           </ul>
         </article>
       </section>
